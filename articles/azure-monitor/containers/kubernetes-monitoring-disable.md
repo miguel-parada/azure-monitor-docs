@@ -23,7 +23,7 @@ Use the following methods to remove [Container insights](#disable-container-insi
 Use the [az aks disable-addons](/cli/azure/aks#az-aks-disable-addons) CLI command to disable Container insights on a cluster. The command removes the agent from the cluster nodes. It doesn't remove the data already collected and stored in the Log Analytics workspace for your cluster.
 
 ```azurecli
-az aks disable-addons -a monitoring -n MyExistingManagedCluster -g MyExistingManagedClusterRG
+az aks disable-addons -a monitoring -n <cluster-name> -g <cluster-resource-group>
 ```
 
 Alternatively, you can use the following ARM template below to remove Container insights. 
